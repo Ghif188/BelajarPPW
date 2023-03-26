@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kepala {
+            display: flex;
+            justify-content: center;
+            border-bottom: 3px;
+            border-bottom-style: solid;
+            border-color: grey;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .isi {
+            margin: 20px 10px;
+            background-color: skyblue;
+            border-radius: 20px;
+            display: flex;
+        }
+
+        .oval {
+            width: 60%;
+            border-radius: 10px;
+            height: 40px;
+            border-color: white;
+        }
+
+        .setengah-layar {
+            padding: 30px 30px;
+            width: 50%;
+        }
+
+        .inputan {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .inputan3 {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .inputan2 {
+            width: 60%;
+            display: flex;
+            align-items: center;
+        }
+
+        .input-area {
+            width: 60%;
+            border-radius: 10px;
+            border-color: white;
+            height: 150px;
+        }
+
+        .margin {
+            margin-bottom: 10px;
+        }
+        .margin2 {
+            margin-right: 10px;
+        }
+        .margin3 {
+            margin: 20px;
+        }
+        .tulisan {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kepala">
+        <img src="logo-ugm.png" class="margin2" width="75" height="75" alt="">
+        <h2>
+            PENDAFTARAN LOMBA KREATIFITAS
+        </h2>
+    </div>
+    <Form class="isi">
+        <div class="setengah-layar">
+            <div class="inputan margin">
+                <h3 class="tulisan">Nama Lengkap :</h3>
+                <input type="text" class="oval" placeholder="Masukkan Nama Anda">
+            </div>
+            <div class="inputan margin">
+                <h3 class="tulisan">Email :</h3>
+                <input type="text" class="oval" placeholder="Masukkan Nama Anda">
+            </div>
+            <div class="inputan margin">
+                <h3 class="tulisan">Alamat :</h3>
+                <textarea type="text" class="input-area" placeholder="Masukkan Alamat Anda"></textarea>
+            </div>
+        </div>
+        <div class="setengah-layar">
+            <div class="inputan tengah margin">
+                <h3 class="tulisan">Tanggal Lahir :</h3>
+                <input type="date" class="oval">
+            </div>
+            <div class="inputan margin">
+                <h3 class="tulisan">Jenis Kelamin :</h3>
+                <div class="inputan2">
+                    <div class="margin2">
+                        <input type="radio" name="Sex" value="pria">
+                        Pria
+                    </div>
+                    <div>
+                        <input type="radio" name="Sex" value="wanita" checked>
+                        Wanita
+                    </div>
+                </div>
+            </div>
+            <div class="inputan margin">
+                <h3 class="tulisan">Alamat Sekolah :</h3>
+                <textarea type="text" class="input-area" placeholder="Masukkan Alamat Sekolah Anda"></textarea>
+            </div>
+        </div>
+    </Form>
+    <fieldset class="margin3">
+        <Legend>KELENGKAPAN DATA</Legend>
+        <label for="pendidikan">Pendidikan Yang Ditempuh Sekarang?</label>
+        <select name="pendidikan" id="">
+            <option value="SD">SD</option>
+            <option value="SMP">SMP</option>
+            <option value="SMA/SMK">SMA/SMK</option>
+            <option value="Kuliah">Kuliah</option>
+        </select>
+        <div class="inputan3 margin">
+            Yang mana menurutmu menarik ?
+            <div class="inputan3">
+                <div class="margin2">
+                    <input type="radio" name="Sex" value="pria">
+                    <img width="200" src="https://media.giphy.com/media/s4GPaO3Biktkk/giphy.gif" alt="">
+                </div>
+                <div class="margin2">
+                    <input type="radio" name="Sex" value="pria">
+                    <img width="200" src="https://media.giphy.com/media/cYYx0b3DcYwOA/giphy.gif" alt="">
+                </div>
+                <div class="margin2">
+                    <input type="radio" name="Sex" value="pria">
+                    <img width="200" src="https://media.giphy.com/media/B4ORVnBvJCVvq/giphy.gif" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="margin2">
+            Masukkan Portofoliomu :
+            <input type="file" name="Sex" value="pria">
+        </div>
+    </fieldset>
+</body>
+</html>
